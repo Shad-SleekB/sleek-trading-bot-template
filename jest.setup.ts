@@ -31,16 +31,18 @@ export const restoreLocalStorageAfterEachTest = () => {
     Object.defineProperty(global, 'localStorage', { value: originalLocalStorage });
 };
 
-Object.defineProperty(window, 'matchMedia', {
-    writable: true,
-    value: jest.fn().mockImplementation(query => ({
-        matches: false,
-        media: query,
-        onchange: null,
-        addListener: jest.fn(),
-        removeListener: jest.fn(),
-    })),
-});
+if (typeof window !== 'undefined') {
+    Object.defineProperty(window, 'matchMedia', {
+        writable: true,
+        value: jest.fn().mockImplementation(query => ({
+            matches: false,
+            media: query,
+            onchange: null,
+            addListener: jest.fn(),
+            removeListener: jest.fn(),
+        })),
+    });
+}
 
 // Mock fetch for tests
 global.fetch = jest.fn(() =>
