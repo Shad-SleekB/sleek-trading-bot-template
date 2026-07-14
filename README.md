@@ -2,8 +2,8 @@
 
 > A white-label starter for building and deploying your own visual trading bot platform on top of the Deriv trading API. Fork it, brand it, deploy it.
 
-![Prerequisite](https://img.shields.io/badge/node-20.x-blue.svg)
-![Prerequisite](https://img.shields.io/badge/npm-9.x-blue.svg)
+![Prerequisite](https://img.shields.io/badge/node-22.x%20%7C%2024.x-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm-9%2B-blue.svg)
 ![Build](https://img.shields.io/badge/build-RSBuild-green.svg)
 ![Framework](https://img.shields.io/badge/framework-React%2018-blue.svg)
 
@@ -56,7 +56,8 @@ Developers who want to ship a branded derivatives trading bot application withou
 git clone https://github.com/<your-org>/<your-fork>.git
 cd <your-fork>
 
-# 2. Install dependencies (Node 20.x required)
+# 2. Use Node.js 24 (recommended; Node.js 22 is also supported)
+nvm use # Optional; selects Node.js 24 from .nvmrc
 npm install
 
 # 3. Configure your brand
@@ -83,8 +84,8 @@ Then walk through the full setup in [Getting Started](./user-guide/01-getting-st
 
 | Requirement | Version                             | Why                                                      |
 | ----------- | ----------------------------------- | -------------------------------------------------------- |
-| Node.js     | 20.x                                | Enforced via `package.json` engines                      |
-| npm         | 9.x                                 | Package manager                                          |
+| Node.js     | 22.x or 24.x (24.x recommended)     | Declared in `package.json`; CI-tested on both versions   |
+| npm         | 9+                                  | Package manager                                          |
 | Git         | 2.30+                               | Version control                                          |
 | Browser     | Chrome, Firefox, or Safari (latest) | Dev server runs on HTTPS; WebCrypto is required for PKCE |
 
