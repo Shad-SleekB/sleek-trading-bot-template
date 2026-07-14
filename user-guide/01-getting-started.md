@@ -21,20 +21,22 @@ Set up your fork of the Trading Bot Template, wire in your own brand and OAuth c
 
 ## Prerequisites
 
-| Requirement | Version                             | Purpose                                                 |
-| ----------- | ----------------------------------- | ------------------------------------------------------- |
-| **Node.js** | 20.x                                | JavaScript runtime (enforced in `package.json` engines) |
-| **npm**     | 9+                                  | Package management                                      |
-| **Git**     | 2.30+                               | Version control                                         |
-| **Browser** | Chrome, Firefox, or Safari (latest) | Dev server runs on HTTPS; WebCrypto required for PKCE   |
+| Requirement | Version                             | Purpose                                                |
+| ----------- | ----------------------------------- | ------------------------------------------------------ |
+| **Node.js** | 22.x or 24.x (24.x recommended)     | Declared in `package.json`; CI-tested on both versions |
+| **npm**     | 9+                                  | Package management                                     |
+| **Git**     | 2.30+                               | Version control                                        |
+| **Browser** | Chrome, Firefox, or Safari (latest) | Dev server runs on HTTPS; WebCrypto required for PKCE  |
 
 Verify your environment:
 
 ```bash
-node --version   # Should output v20.x.x
+node --version   # Should output v22.x.x or v24.x.x
 npm --version    # Should output 9.x or higher
 git --version    # Should output 2.30+
 ```
+
+Node.js 24 is the development default. If you use nvm, run `nvm use` from the project root to select it. Node.js 22 remains supported for consumers with deployment constraints.
 
 You will also need, eventually:
 

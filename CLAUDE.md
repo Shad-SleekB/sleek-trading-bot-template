@@ -232,4 +232,4 @@ When modifying Blockly blocks, look in [src/external/bot-skeleton/scratch/blocks
 
 ## Node Version
 
-This project requires **Node.js 20.x** as specified in [package.json](package.json) engines field.
+This project supports **Node.js 22.x and 24.x** as specified in the [package.json](package.json) engines field. Use **Node.js 24.x** for development (the version selected by `.nvmrc`).
