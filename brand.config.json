@@ -3,7 +3,7 @@
     "brand_domain": "https://sleek-trading-bot-template.vercel.app/",
     "brand_hostname": {
         "staging": "staging.yourbrand.com/dashboard",
-        "production": "https://sleek-trading-bot-template.vercel.app//dashboard"
+        "production": "https:/sleek-trading-bot-template.vercel.app/dashboard"
     },
     "domain_name": "https://sleek-trading-bot-template.vercel.app/",
     "colors": {
@@ -73,7 +73,7 @@
         },
         "hostname": {
             "production": {
-                "com": "bot.yourbrand.com"
+                "com": "sleek-trading-bot-template.vercel.app"
             },
             "staging": {
                 "com": "staging-bot.yourbrand.com"
