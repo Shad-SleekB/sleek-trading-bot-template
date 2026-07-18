@@ -48,6 +48,11 @@ const Footer = () => {
             <ServerTime />
             <div className='app-footer__vertical-line' />
             <NetworkStatus />
+            /*custom test footer*/
+            <div className='app-footer__custom'>
+                <span className='app-footer__custom-brand'>sleektradersite</span>
+                <a className='app-footer__custom-email' href='mailto:soguttu62@gmail.com'>soguttu62@gmail.com</a>
+            </div>
 
             {/* [AI] Only show language modal if language settings are enabled */}
             {enableLanguageSettings && isModalOpenFor('DesktopLanguagesModal') && (
