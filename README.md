@@ -1,6 +1,6 @@
-# Trading Bot Template
+# SleekTrader
 
-> A white-label starter for building and deploying your own visual trading bot platform on top of the Deriv trading API. Fork it, brand it, deploy it.
+> SleekTrader is a visual trading bot platform built on the Deriv trading API, based on a white-label trading bot template.
 
 ![Prerequisite](https://img.shields.io/badge/node-22.x%20%7C%2024.x-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/npm-9%2B-blue.svg)

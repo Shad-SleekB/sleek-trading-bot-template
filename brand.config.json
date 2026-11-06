@@ -1,11 +1,11 @@
 {
-    "brand_name": "Sleek001",
+    "brand_name": "SleekTrader",
     "brand_domain": "sleek-trading-bot-template.vercel.app",
     "brand_hostname": {
         "staging": "staging.yourbrand.com/dashboard",
         "production": "sleek-trading-bot-template.vercel.app/dashboard"
     },
-    "domain_name": "sleek-trading-bot-template.vercel.app",
+    "domain_name": "SleekTrader",
     "colors": {
         "primary": "#3b82f6",
         "secondary": "#64748b",
@@ -58,14 +58,14 @@
         "css_variable_prefix": "--brand"
     },
     "platform": {
-        "name": "Trading Bot",
+        "name": "SleekTrader",
         "logo": {
             "type": "component",
             "component_name": "BrandLogo",
-            "alt_text": "Trading Bot",
+            "alt_text": "SleekTrader",
             "link_url": "/",
             "show_text": false,
-            "text": "Trading Bot"
+            "text": "SleekTrader"
         },
         "footer": {
             "enable_language_settings": false,

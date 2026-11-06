@@ -1,7 +1,5 @@
-// ⚠️ PLACEHOLDER LOGO - REPLACE WITH YOUR BRAND ⚠️
-// This is a generic template placeholder
-// Replace this SVG with your own brand logo
-// See: src/components/layout/app-logo/README.md for instructions
+// SleekTrader wordmark: a rising-trend mark followed by the brand name.
+// See: src/components/layout/app-logo/README.md for how to swap in a different logo.
 
 type TBrandLogoProps = {
     width?: number;
@@ -10,66 +8,43 @@ type TBrandLogoProps = {
     className?: string;
 };
 
-export const BrandLogo = ({
-    width = 120,
-    height = 32,
-    fill = 'currentColor',
-    className = ''
-}: TBrandLogoProps) => {
+export const BrandLogo = ({ width = 132, height = 32, fill = 'currentColor', className = '' }: TBrandLogoProps) => {
     return (
         <svg
             width={width}
             height={height}
-            viewBox="0 0 120 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            viewBox='0 0 132 32'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
             className={className}
-            aria-label="Brand Logo Placeholder"
+            role='img'
+            aria-label='SleekTrader'
         >
-            {/* [AI] ⚠️ PLACEHOLDER - Replace with your brand's SVG */}
-
-            {/* Dashed border box to indicate placeholder */}
-            <rect
-                x="1"
-                y="1"
-                width="118"
-                height="30"
-                rx="4"
-                opacity="0.3"
-                fill="none"
+            <rect x='2' y='4' width='24' height='24' rx='6' fill='#3b82f6' />
+            <path
+                d='M7 21L12 15.5L15.5 18.5L21 11.5'
+                stroke='#ffffff'
+                strokeWidth='2.2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
             />
-
-            {/* Image icon placeholder */}
-            <g transform="translate(8, 8)">
-                {/* Picture frame icon */}
-                <rect x="0" y="0" width="16" height="16" rx="2" stroke={fill} strokeWidth="1.5" fill="none" opacity="0.4" />
-
-                {/* Mountain/landscape icon inside */}
-                <path
-                    d="M2 12L6 8L9 11L14 6V14H2V12Z"
-                    fill={fill}
-                    opacity="0.3"
-                />
-
-                {/* Sun/circle in corner */}
-                <circle cx="11" cy="5" r="1.5" fill={fill} opacity="0.3" />
-            </g>
-
-            {/* "YOUR LOGO" text */}
+            <path
+                d='M17.5 11.5H21V15'
+                stroke='#ffffff'
+                strokeWidth='2.2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+            />
             <text
-                x="30"
-                y="20"
-                fontFamily="system-ui, -apple-system, sans-serif"
-                fontSize="11"
-                fontWeight="500"
+                x='32'
+                y='21.5'
+                fontFamily='system-ui, -apple-system, sans-serif'
+                fontSize='16'
+                fontWeight='700'
                 fill={fill}
-                opacity="0.5"
-                letterSpacing="0.5"
             >
-                BRAND LOGO
+                SleekTrader
             </text>
-
-            {/* [/AI] */}
         </svg>
     );
 };
